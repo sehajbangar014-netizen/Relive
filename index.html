@@ -3,53 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relive - Business Website</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; }
-        .hero { background: #f4f4f4; padding: 20px; text-align: center; }
-        .booking, .intake, .contact { padding: 20px; }
-        /* Responsive Styles */
-        @media (max-width: 600px) {
-            .hero { font-size: 16px; }
-            .booking, .intake, .contact { font-size: 14px; }
-        }
-    </style>
+    <title>Business Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="hero">
-        <h1>Welcome to Relive</h1>
-        <p>Your one-stop destination for all your needs</p>
-    </div>
-
-    <div class="location">
-        <h2>Our Location</h2>
-        <p>123 Business St, Relive City, XY 12345</p>
-    </div>
-
-    <div class="booking">
-        <h2>Client Booking</h2>
-        <form action="/book" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <input type="submit" value="Book Now">
-        </form>
-    </div>
-
-    <div class="intake">
-        <h2>Intake Form</h2>
-        <form action="/submit-intake" method="post">
-            <label for="client-info">Client Information:</label><br>
-            <textarea id="client-info" name="client-info" rows="4" required></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-    <div class="contact">
+    <header>
+        <div class="hero">
+            <h1>Welcome to Our Business</h1>
+            <p>Your success is our priority</p>
+            <a href="#services" class="cta">Get Started</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a variety of services to help you succeed.</p>
+            <!-- Add service details here -->
+        </section>
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <!-- Add testimonials here -->
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <!-- Add images here -->
+        </section>
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <!-- Add team member details here -->
+        </section>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <!-- Add FAQ here -->
+        </section>
+        <section id="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
         <h2>Contact Us</h2>
-        <p>Email: info@reliveteam.com</p>
-        <p>Phone: (123) 456-7890</p>
-    </div>
-
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </footer>
 </body>
 </html>
