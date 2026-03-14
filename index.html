@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relive - Business Website</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; }
+        .hero { background: #f4f4f4; padding: 20px; text-align: center; }
+        .booking, .intake, .contact { padding: 20px; }
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .hero { font-size: 16px; }
+            .booking, .intake, .contact { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Welcome to Relive</h1>
+        <p>Your one-stop destination for all your needs</p>
+    </div>
+
+    <div class="location">
+        <h2>Our Location</h2>
+        <p>123 Business St, Relive City, XY 12345</p>
+    </div>
+
+    <div class="booking">
+        <h2>Client Booking</h2>
+        <form action="/book" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+
+    <div class="intake">
+        <h2>Intake Form</h2>
+        <form action="/submit-intake" method="post">
+            <label for="client-info">Client Information:</label><br>
+            <textarea id="client-info" name="client-info" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@reliveteam.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+
+</body>
+</html>
